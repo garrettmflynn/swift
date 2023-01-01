@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #controls {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
-    <input type="file" id="file" />
-    <div id="buttons">
-        <button data-filepath="./assets/bejeweled.jpeg">bejeweled</button>
-        <button data-filepath="./assets/all-too-well.webp">all too well</button>
+    <div id="controls">
+        <input type="file" id="file" />
+        <div id="buttons">
+            <button data-filepath="./assets/bejeweled.jpeg">bejeweled</button>
+            <button data-filepath="./assets/all-too-well.webp">all too well</button>
+        </div>
     </div>
 </body>
 <script type="module" src="./index.js"></script>

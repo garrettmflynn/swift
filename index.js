@@ -38,8 +38,9 @@ function createSketch(url) {
         }
     
         p.setup = () => {
-            const width = 720;
-            p.createCanvas(width, 400);
+            const width = window.innerWidth
+            const height = window.innerHeight
+            p.createCanvas(width, height);
             p.imageMode(p.CENTER);
             p.noStroke();
             p.background(255);
