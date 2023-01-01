@@ -14,7 +14,6 @@ buttons.forEach(button => {
 
 let active;
 file.onchange = (f) => {
-    if (active) active.remove()
     const file = f.target.files[0];
     const reader = new FileReader();
     reader.onload = (e) => {
@@ -25,6 +24,8 @@ file.onchange = (f) => {
 
 
 function createSketch(url) {
+    if (active) active.remove()
+
     let sketch = (p) => {
 
         active = p
